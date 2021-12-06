@@ -96,7 +96,7 @@ public class ArrayDemo {
 		System.out.println("The avg of array is : " + avg);
 	}
 
-	private static int[] takeArrayInput() {
+	public static int[] takeArrayInput() {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the size of array : ");
