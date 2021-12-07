@@ -42,7 +42,7 @@ public class ArithmeticOperators {
 		
 		System.out.println(100%2);
 		
-		double a = 10.102%2;
+		double a = 10;
 		
 		System.out.println(a);
 		
