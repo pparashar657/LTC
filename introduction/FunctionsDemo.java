@@ -19,11 +19,11 @@ public class FunctionsDemo {
 //		int ans = max(100, 20);
 //		System.out.println(ans);
 //		
-		// Call by Value
+	//	 Call by Value
 //		int a = 10;
 //		increase(a);
 //		System.out.println(a);
-//		
+		
 		
 		// Call by reference
 		int[] arr = {1,2,3};
