@@ -57,6 +57,8 @@ public class ArrayListDemo {
 		Integer[] a = list.toArray(new Integer[0]);
 		System.out.println(Arrays.toString(a));
 		
+		int a1 = 10;
+		Integer b = Integer.valueOf(a1);
 		
 		Integer[] num = {1,2,3,4,5};
 		
