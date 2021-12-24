@@ -207,5 +207,22 @@ public class StringDemo {
 //		System.out.println(ans);
 //		
 	}
+	
+	public static int[] getCharMap(String str) {
+		int[] charMap = new int[128];
+		
+		str = str.toLowerCase();
+		
+		for(int i=0;i<str.length();i++) {
+//			char currChar = str.charAt(i);
+//			int ascii = (int) currChar;
+//			charMap[ascii]++;
+			
+			charMap[str.charAt(i)]++;
+		}
+		
+		return charMap;
+	}
+	
 
 }
