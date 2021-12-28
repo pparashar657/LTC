@@ -36,8 +36,8 @@ public class CompressString {
 		for(int i=0;i<ans.length();i++) {
 			input[i] = ans.charAt(i);
 		}
+		return "";
 		
-		return ans;
 	}
 
 }
