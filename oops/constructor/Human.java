@@ -1,4 +1,4 @@
-package oops.introduction;
+package oops.constructor;
 
 public class Human {
     // Data member/ Data properties
@@ -6,14 +6,44 @@ public class Human {
     int age;
     char gender;
 
+    static int population = 0;
+
     Human() {
         System.out.println("I am default constructor");
+        Human.population += 1;
     }
 
-    Human(int a) {
-        System.out.println("I am parameterized constructor");
+    Human(String name) {
+        this.name = name;
+        Human.population += 1;
     }
 
+    Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+        Human.population += 1;
+    }
+
+    Human(String name, int age, char gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        Human.population += 1;
+    }
+
+    // Copy Constructor
+    Human(Human otherHuman) {
+        System.out.println("This is a copy constructor");
+        this.name = otherHuman.name;
+        this.age = otherHuman.age;
+        this.gender = otherHuman.gender;
+        Human.population += 1;
+    }
+
+    static void printPopulation() {
+//        System.out.println(this.name);
+        System.out.println("Population = " + Human.population);
+    }
 
     void changeName(String name) {
         this.name = name;
