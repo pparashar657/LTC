@@ -21,4 +21,10 @@ public class Car extends Vehicle {
                 + " Average = " + this.average
                 + " No of Seats = " + this.noOfSeats;
     }
+
+//    void test() {
+//        System.out.println(super.name);
+//        super.printPrice();
+//    }
+
 }

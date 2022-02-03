@@ -1,5 +1,7 @@
 package oops.introduction;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -43,6 +45,13 @@ public class Main {
         System.out.println(ankit.name);
 
         Human rishab = new Human();
+
+        rishab.increasePopulation();
+
+        pawan.increasePopulation();
+
+        System.out.println(Human.population);
+        Human.printPopulation();
 
 
     }

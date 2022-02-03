@@ -5,6 +5,7 @@ public class Human {
     String name;
     int age;
     char gender;
+    static int population = 0;
 
     Human() {
         System.out.println("I am default constructor");
@@ -14,6 +15,14 @@ public class Human {
         System.out.println("I am parameterized constructor");
     }
 
+    void increasePopulation() {
+        Human.population ++;
+    }
+
+    public static void printPopulation() {
+//        System.out.println(name);
+        System.out.println(Human.population);
+    }
 
     void changeName(String name) {
         this.name = name;

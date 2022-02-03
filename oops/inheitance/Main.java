@@ -10,6 +10,16 @@ public class Main {
         myCar.openAirBag();
 
         System.out.println(myCar);
+
+        Vehicle myVehicle = new Vehicle("Bullet", 2, 10);
+
+        System.out.println(myVehicle.getName());
+        myVehicle.setName("Honda");
+
+        System.out.println(myVehicle.getName());
+
+        myVehicle.printPrice();
+
     }
 
 }
