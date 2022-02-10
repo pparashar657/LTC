@@ -13,7 +13,7 @@ public class Car extends Vehicle {
     }
 
     public void openAirBag() {
-        System.out.println("Air Bag is opened");
+        System.out.println("Air Bag is opened" + noOfAirBag);
     }
 
     public String toString() {
