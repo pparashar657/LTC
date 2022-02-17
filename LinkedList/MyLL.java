@@ -2,9 +2,9 @@ package LinkedList;
 
 public class MyLL {
 
-    private Node head;
-    private Node tail;
-    private int size;
+    Node head;
+    Node tail;
+    int size;
 
     private void insertFirstNode(Node newNode) {
         this.head = newNode;
